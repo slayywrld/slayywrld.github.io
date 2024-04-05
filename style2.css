@@ -1,0 +1,71 @@
+/* Reset some default styles for better consistency. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.badges-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  animation: cycleAnimation 30s infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes cycleAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  16.67%, 100% {
+    transform: translateY(-100%);
+  }
+  33.33%, 100% {
+    transform: translateY(-200%);
+  }
+  50%, 100% {
+    transform: translateY(-300%);
+  }
+  66.67%, 100% {
+    transform: translateY(-400%);
+  }
+  83.33%, 100% {
+    transform: translateY(-500%);
+  }
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.controls button:hover {
+  background-color: #e65c00;
+}
