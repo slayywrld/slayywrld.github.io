@@ -107,11 +107,11 @@
 
   .social-icons-container:hover .social-icons-border {
     transform: scale(1.1);
-    border-color: #fff;
+    border-color: #00ff00;
   }
 
   .social-icons-container:hover .social-icon {
-    color: #ff6600;
+    color: #fff;
     transform: scale(1.2);
   }
 
