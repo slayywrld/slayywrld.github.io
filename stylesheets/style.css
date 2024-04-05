@@ -29,7 +29,6 @@ body {
   background-color: rgba(34, 34, 34, 0.7); /* Adjust the alpha value for transparency */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease-in-out;
   backdrop-filter: blur(5px); /* Add a slight blur effect */
 }
