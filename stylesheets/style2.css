@@ -88,12 +88,12 @@
   }
 
   .social-icon:hover {
-    color: #ff6600;
+    color: #00ff00;
     transform: scale(1.2);
   }
 
   .social-icons-border {
-    border: 2px solid #ff6600;
+    border: 2px solid #00ff00;
     border-radius: 10px;
     position: absolute;
     top: 0;
