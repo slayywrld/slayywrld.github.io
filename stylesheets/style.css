@@ -26,11 +26,12 @@ body {
 }
 
 .card {
-  background-color: #222;
+  background-color: rgba(34, 34, 34, 0.7); /* Adjust the alpha value for transparency */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease-in-out;
+  backdrop-filter: blur(5px); /* Add a slight blur effect */
 }
 
 .card:hover {
@@ -40,7 +41,7 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #000000; /* Orange button color */
+  background-color: #000000; 
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -48,7 +49,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #000000; /* Darker orange on hover */
+  background-color: #000000;
 }
 
 .footer {
@@ -69,7 +70,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 102, 0, 0.5); /* Orange with transparency */
+  background-color: rgba(255, 102, 0, 0.5); 
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
   z-index: -1;
