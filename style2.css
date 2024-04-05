@@ -1,4 +1,4 @@
-/* Reset some default styles for better consistency. */
+/* Reset some default styles for better consistency */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #000;
   color: #fff;
 }
 
@@ -19,53 +20,66 @@ body {
 h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .badges-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* Distribute items evenly */
   gap: 20px;
-  animation: cycleAnimation 30s infinite; /* Adjust animation duration as needed */
 }
 
-@keyframes cycleAnimation {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  16.67%, 100% {
-    transform: translateY(-100%);
-  }
-  33.33%, 100% {
-    transform: translateY(-200%);
-  }
-  50%, 100% {
-    transform: translateY(-300%);
-  }
-  66.67%, 100% {
-    transform: translateY(-400%);
-  }
-  83.33%, 100% {
-    transform: translateY(-500%);
-  }
+.badge-item {
+  border: 3px solid #333; /* Adjust border color as needed */
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(33.33% - 20px); /* Three items per row with 20px gap */
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.badge-item:hover {
+  transform: scale(1.1);
+}
+
+.badge-item img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
 .controls {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
-.controls button {
-  margin: 0 10px;
+button {
   padding: 10px 20px;
-  background-color: #ff6600;
+  background-color: #ff6600; /* Orange button color */
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 0 10px;
   transition: background-color 0.3s ease-in-out;
 }
 
-.controls button:hover {
-  background-color: #e65c00;
+button:hover {
+  background-color: #e65c00; /* Darker orange on hover */
 }
+
+/* Particle background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place particles behind other content */
+}
+
