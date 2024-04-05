@@ -56,22 +56,6 @@ body {
   margin-top: 50px;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-}
-
-.social-icon {
-  color: #fff;
-  font-size: 24px;
-  margin: 0 10px;
-  transition: color 0.3s ease-in-out;
-}
-
-.social-icon:hover {
-  color: #ff6600; /* Orange on hover */
-}
-
 /* Glowing effect */
 .glow-effect {
   position: relative;
@@ -105,3 +89,54 @@ body {
     height: 100%;
     z-index: -1; /* Place particles behind other content */
   }
+
+  .social-icons-container {
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease-in-out;
+    position: relative;
+  }
+
+  .social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+
+  .social-icon:hover {
+    color: #00ff00;
+    transform: scale(1.2);
+  }
+
+  .social-icons-border {
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transform: scale(1);
+  }
+
+  .social-icons-container:hover .social-icons-border {
+    transform: scale(1.1);
+    border-color: #00ff00;
+  }
+
+  .social-icons-container:hover .social-icon {
+    color: #fff;
+    transform: scale(1.2);
+  }
+
