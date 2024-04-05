@@ -46,9 +46,10 @@
   }
 
   .badge-link {
-    display: block;
-    width: 100%;
-    height: 100%;
+    display: inline-block;
+    width: calc(100% - 20px);
+    max-width: 180px; /* Set maximum width */
+    height: 180%;
     text-decoration: none;
     color: inherit;
   }
