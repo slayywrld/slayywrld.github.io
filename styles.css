@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #0073e6;
+}
+
+header h1 {
+    margin: 0;
+    color: #39ff14;
+    text-shadow: 0 0 10px #39ff14;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+    text-shadow: 0 0 5px #ff007f;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff007f;
+    transition: width .3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.badge {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 0 10px #0073e6;
+    transition: transform .3s, box-shadow .3s;
+}
+
+article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #0073e6;
+}
+
+article h2 {
+    color: #ff007f;
+    text-shadow: 0 0 10px #ff007f;
+}
+
+article p {
+    color: #e0e0e0;
+}
+
+article a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+}
+
+article a:hover {
+    color: #ff007f;
+    text-shadow: 0 0 5px #ff007f;
+}
+
+article a::after {
+    content: '>>';
+    display: inline-block;
+    margin-left: 5px;
+    color: #ff007f;
+    opacity: 0;
+    transition: opacity .3s, margin-left .3s;
+}
+
+article a:hover::after {
+    opacity: 1;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #0073e6;
+}
